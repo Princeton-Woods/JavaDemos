@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><title>Login Page</title>
+</head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<body>
+
+  <div id="Users">
+    <h3 class="text-center text-white pt-5">User form</h3>
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form method="addUser" action="Servlet6">
+                        <h3 class="text-center text-info">Login</h3>
+                        <div class="form-group">
+                            <label for="uname" class="text-info">Name:</label><br>
+                            <input type="text" name="uname" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="text-info">Email:</label><br>
+                            <input type="text" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label for="country" class="text-info">Country:</label><br>
+                          <input type="text" name="country" class="form-control">
+                      </div>
+                      <div class="radio-primary">
+                        <input type="radio" name="gender" value="Male" checked/>
+                        <label for="radio1">Male</label>
+                      </div>
+                      <div class="radio-primary">
+                        <input type="radio" name="gender" value="Female" checked/>
+                        <label for="radio2">Female</label>
+                      </div>
+                      <div>
+                        <select name="type" style="font-size: 16px;" onchange="document.getElementById('price3').innerHTML='$'+this.value">
+                          <option value="1">Add User</option>
+                          <option value="2">Update User</option>
+                          <option value="3">Delete User</option>
+                          <option value="4">View Users</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                    </div>
+                    <div class="form-group">
+                        <input type="button" name="show" class="btn btn-info btn-md" value="Show Records">
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
